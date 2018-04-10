@@ -1,0 +1,32 @@
+.house-container {
+	width: 100%;
+	height: 100%;
+	background: url('../../assets/house/bg.jpg') no-repeat;
+	background-color: transparent;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+
+#krpano {
+	width: 100%;
+	height: 78%;
+	position: relative;
+}
+
+.house-container .select-container {
+	width: 100%;
+}
+
+#krpano .huxingtu-container {
+	width: 30%;
+	position: absolute;
+	bottom: -.7%;
+	right: 0;
+	z-index: 999;
+}
+
+#krpano .huxingtu-container img {
+	max-width: 100%;
+	max-height: 100%;
+	pointer-events: none;
+}

@@ -1,0 +1,41 @@
+.house-choose-container {
+	width: 100%;
+	height: 3rem;
+	overflow: hidden;
+}
+
+.house-choose-container i.line {
+	display: block;
+	width: 100%;
+	height: 1px;
+	background-color: #ebe3da;
+}
+
+.house-choose-container .btn-wrap {
+	width: 100%;
+	margin-top: 1rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+}
+
+.house-choose-container .btn-wrap div.house_btn {
+	width: 18%;
+	z-index: 99;
+	position: relative;
+}
+
+.house-choose-container .btn-wrap div.house_btn img.arrow {
+	max-width: 1.2rem;
+	max-height: 100%;
+	position: absolute;
+	z-index: 9999;
+	left: 38%;
+	top: -90%;
+}
+
+.house-choose-container .btn-wrap div.house_btn img {
+	max-width: 100%;
+	max-height: 100%;
+}
