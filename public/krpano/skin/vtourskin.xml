@@ -35,11 +35,25 @@
 	       tooltip=""
 	       linkedscene=""
 	       linkedscene_lookat=""
-	       onclick=""
-	       onover=""
-	       onout=""
+	       onclick="skin_hotspotstyle_click();"
+	       onover="tween(scale,0.55);"
+	       onout="tween(scale,0.5);"
 	       onloaded=""
 	       />
+
+	<action name="skin_hotspotstyle_click" scope="local">
+		if(caller.linkedscene,
+			copy(hs_linkedscene, caller.linkedscene);
+			if(caller.linkedscene_lookat, txtsplit(caller.linkedscene_lookat, ',', hs_lookat_h, hs_lookat_v, hs_lookat_fov); );
+			set(caller.enabled, false);
+			skin_hidetooltips();
+			tween(caller.depth|caller.alpha|caller.oy|caller.rx, 4000|0.0|-50|-60, 0.5, default,
+				skin_loadscene(get(hs_linkedscene), get(skin_settings.loadscene_blend));
+				if(hs_lookat_h !== null, skin_lookat(get(hs_lookat_h), get(hs_lookat_v), get(hs_lookat_fov)); );
+				skin_updatescroll();
+			);
+		);
+	</action>
 
 	<!-- skin_base - the base skin image -->
 	<style name="skin_base" url="calc:vtourskinxmlpath.url + skin_settings.design_skin_images" />
@@ -77,6 +91,7 @@
 		calc(layer[skin_thumbborder].parent, 'skin_thumb_' + scene[get(newscenenameorindex)].index);
 		layer[skin_thumbs].scrolltocenter(get(scene[get(newscenenameorindex)].thumbx), get(scene[get(newscenenameorindex)].thumby));
 		loadscene(get(scene[get(newscenenameorindex)].name), null, get(skin_settings.loadscene_flags), get(blendmode));
+		js(getSenceName(get(scene[get(newscenenameorindex)].name)))
 	</action>
 	<action name="skin_showloading">
 		if(display.stereo == true,

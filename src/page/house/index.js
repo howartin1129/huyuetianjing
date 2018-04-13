@@ -5,10 +5,19 @@ import conifg from '../../common/config'
 import './index.css';
 import imgFactory from '../../common/imgFactory';
 
+function test() {
+	console.log(11111111)
+}
+
 export default class House extends Component {
 
+	constructor(props) {
+		super(props)
+	}
+
 	state = {
-		house_type: 0
+		house_type: 0,
+		sence_index: 0
 	}
 
 	componentDidMount() {
@@ -22,6 +31,14 @@ export default class House extends Component {
 				this.krpano = e
 			}
 		})
+		window.getSenceName = sence_name => {
+			let _sence_index = conifg.houseType[this.state.house_type].imgarr.indexOf(sence_name)
+			if (_sence_index !== -1) {
+				this.setState({
+					sence_index: _sence_index
+				})
+			}
+		}
 	}
 
 	roomChooseHandler(e) {
@@ -35,11 +52,14 @@ export default class House extends Component {
 					<img src={imgFactory[`hxt_${this.state.house_type}`]} alt="" />
 				</div>
 			</div>
-			<RoomChoose house_type={this.state.house_type} handler={e => { this.roomChooseHandler(e) }} />
+			<RoomChoose house_type={this.state.house_type}
+				sence_index={this.state.sence_index}
+				handler={e => { this.roomChooseHandler(e) }} />
 			<HouseChoose handler={e => {
 				this.krpano.call(`skin_loadscene(${conifg.houseType[e.house_type].imgarr[0]},get(skin_settings.loadscene_blend));`);
 				this.setState({
-					house_type: e.house_type
+					house_type: e.house_type,
+					sence_index: 0
 				})
 			}} />
 		</div >

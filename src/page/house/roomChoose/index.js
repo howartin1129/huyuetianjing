@@ -5,19 +5,9 @@ import './index.css';
 const Swiper = window.Swiper
 export default class RoomChoose extends Component {
 
-	state = {
-		curPos: 0
-	}
-
 	componentDidMount() {
 		this.roomSwiper = new Swiper('.dh-swiper-container', {
 			slidesPerView: 4
-		})
-	}
-
-	componentWillReceiveProps() {
-		this.setState({
-			curPos: 0
 		})
 	}
 
@@ -26,7 +16,7 @@ export default class RoomChoose extends Component {
 	}
 
 	renderSlide() {
-		let { house_type, handler } = this.props
+		let { house_type, sence_index, handler } = this.props
 		return config.houseType[house_type].imgarr.map((name, i) => {
 			return <div className="swiper-slide"
 				key={i}>
@@ -35,11 +25,8 @@ export default class RoomChoose extends Component {
 						handler && handler({
 							name: name
 						})
-						this.setState({
-							curPos: i
-						})
 					}}>
-					<img src={this.state.curPos === i ? imgFactory[name] : imgFactory[`${name}_un`]} alt="" />
+					<img src={sence_index === i ? imgFactory[name] : imgFactory[`${name}_un`]} alt="" />
 				</div>
 			</div>
 		})
