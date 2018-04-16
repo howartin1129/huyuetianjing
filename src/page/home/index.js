@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import './index.css';
-import btn_house from '../../assets/house.png'
-import btn_garden from '../../assets/garden.png'
-import btn_enter from '../../assets/loadenter.png'
 import config from '../../common/config'
+import imgFactory from '../../common/imgFactory'
 const $ = window.$
 export default class Home extends Component {
 
@@ -29,7 +27,7 @@ export default class Home extends Component {
 						})
 						config.loadOnce = true
 					}}>
-					<img src={btn_enter} alt="" />
+					<img src={imgFactory.btn_enter} alt="" />
 				</div>
 			</div>}
 			<div className='btn-wrap'>
@@ -41,7 +39,7 @@ export default class Home extends Component {
 						$(e.target).css('opacity', '1')
 						history.push('/house')
 					}}>
-					<img src={btn_house} alt="" />
+					<img src={imgFactory.btn_house} alt="" />
 				</div>
 				<div className='btn-garden'
 					onTouchStart={e => {
@@ -51,7 +49,7 @@ export default class Home extends Component {
 						$(e.target).css('opacity', '1')
 						history.push('/garden')
 					}}>
-					<img src={btn_garden} alt="" />
+					<img src={imgFactory.btn_garden} alt="" />
 				</div>
 			</div>
 		</div>

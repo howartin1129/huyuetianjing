@@ -1,3 +1,7 @@
+let btn_house = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house.png'
+let btn_garden = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/garden.png'
+let btn_enter = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/loadenter.png'
+
 let houseChoose_1 = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/ygxz.png'
 let houseChoose_2 = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/llds.png'
 let houseChoose_3 = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/kjmz.png'
@@ -75,6 +79,9 @@ let _150_zw = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/1
 
 
 export default {
+	btn_house,
+	btn_garden,
+	btn_enter,
 	houseChoose_1,			//'阳光小筑'
 	houseChoose_2,			//'玲珑叠墅'
 	houseChoose_3,			//'宽景美宅'

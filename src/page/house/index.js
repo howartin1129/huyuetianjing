@@ -17,7 +17,6 @@ export default class House extends Component {
 	}
 
 	componentDidMount() {
-		console.log(imgFactory.aaa)
 		window.embedpano({
 			// xml: `./krpano/krpano.xml`,
 			xml: `http://canto-dichan.stor.sinaapp.com/huyuetianjing/krpano.xml`,
