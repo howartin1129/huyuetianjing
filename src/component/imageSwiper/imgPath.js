@@ -6,7 +6,7 @@ function getImagePath(num) {
 			fname = `0000${i}`
 		else if (i < 100)
 			fname = `000${i}`
-		pathArr.push(require(`../../assets/garden/VRFBSplit_xy_c01(0-500).RGB_color 2_${fname}.jpg`))
+		pathArr.push(`http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/garden/VRFBSplit_xy_c01(0-500).RGB_color 2_${fname}.jpg`)
 	}
 	return pathArr
 }

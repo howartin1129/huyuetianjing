@@ -3,11 +3,7 @@ import HouseChoose from './houseChoose'
 import RoomChoose from './roomChoose'
 import conifg from '../../common/config'
 import './index.css';
-import imgFactory from '../../common/imgFactory';
-
-function test() {
-	console.log(11111111)
-}
+import imgFactory from '../../common/imgFactory'
 
 export default class House extends Component {
 
@@ -21,8 +17,10 @@ export default class House extends Component {
 	}
 
 	componentDidMount() {
+		console.log(imgFactory.aaa)
 		window.embedpano({
-			xml: `./krpano/krpano.xml`,
+			// xml: `./krpano/krpano.xml`,
+			xml: `http://canto-dichan.stor.sinaapp.com/huyuetianjing/krpano.xml`,
 			target: `krpano`,
 			html5: "auto",
 			mobilescale: 1.0,
