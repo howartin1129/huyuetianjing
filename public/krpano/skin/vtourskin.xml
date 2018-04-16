@@ -32,22 +32,40 @@
 
 	<!-- skin_hotspotstyle - style for the hotspots -->
 	<style name="skin_hotspotstyle" url="hotspot.png" scale="0.5" edge="top" distorted="true"
+				 width="150"
+				 height="150"
 	       tooltip=""
 	       linkedscene=""
 	       linkedscene_lookat=""
 	       onclick="skin_hotspotstyle_click();"
 	       onover="tween(scale,0.55);"
 	       onout="tween(scale,0.5);"
-	       onloaded=""
 	       />
 
+		<style name="skin_hotspot_text_style" scale="0.5" edge="top" distorted="false"
+	       tooltip=""
+	       linkedscene=""
+	       linkedscene_lookat=""
+				 type='text'
+				 html=''
+				 ox="0"
+				 oy="0"
+				 bgalpha=".8"
+				 bgroundedge="8"
+				 bg="true"
+				 bgcolor="0xFFFFFF"
+				 css='font-size:24px;font-weight:bold;'
+				 padding='5 20'
+	       onclick="skin_hotspotstyle_click();"
+	       onloaded="copy(html,scene[get(linkedscene)].title);"
+	       />
 	<action name="skin_hotspotstyle_click" scope="local">
 		if(caller.linkedscene,
 			copy(hs_linkedscene, caller.linkedscene);
 			if(caller.linkedscene_lookat, txtsplit(caller.linkedscene_lookat, ',', hs_lookat_h, hs_lookat_v, hs_lookat_fov); );
 			set(caller.enabled, false);
 			skin_hidetooltips();
-			tween(caller.depth|caller.alpha|caller.oy|caller.rx, 4000|0.0|-50|-60, 0.5, default,
+			tween(caller.depth|caller.alpha|caller.oy|caller.rx, 4000|0.0|-50|-60, 0, default,
 				skin_loadscene(get(hs_linkedscene), get(skin_settings.loadscene_blend));
 				if(hs_lookat_h !== null, skin_lookat(get(hs_lookat_h), get(hs_lookat_v), get(hs_lookat_fov)); );
 				skin_updatescroll();

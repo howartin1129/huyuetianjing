@@ -25,7 +25,7 @@
 	               thumbs_loop="false"
 	               tooltips_buttons="false"
 	               tooltips_thumbs="false"
-	               tooltips_hotspots="false"
+	               tooltips_hotspots="true"
 	               tooltips_mapspots="false"
 	               deeplinking="false"
 	               loadscene_flags="MERGE"
@@ -67,7 +67,8 @@
 		<image>
 			<cube url="panos/panos95/keting.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-23.222" atv="20.008" linkedscene="_95_zw" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-22.543" atv="27.503" rotate='-180' linkedscene="_95_zw" />
+		<hotspot name="spot2" style="skin_hotspot_text_style"  ox="0" oy="-70" ath="-22.543" atv="27.503" linkedscene="_95_zw" />
 	</scene>
 	<scene name="_95_zw" title="主卧" onstart="" thumburl="panos/panos95/zhuwo.tiles/thumb.jpg" lat="" lng="" heading="">
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -75,6 +76,8 @@
 		<image>
 			<cube url="panos/panos95/zhuwo.tiles/pano_%s.jpg" />
 		</image>
+			<hotspot name="spot1" style="skin_hotspotstyle" ath="24.674" atv="40.173" rotate='-180' linkedscene="_95_cw" />
+			<hotspot name="spot2" style="skin_hotspot_text_style"  ox="0" oy="-70" ath="24.674" atv="40.173" linkedscene="_95_cw" />
 	</scene>
 	<scene name="_95_cw" title="客卧" onstart="" thumburl="panos/panos95/gaizao.tiles/thumb.jpg" lat="" lng="" heading="">
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -82,6 +85,8 @@
 		<image>
 			<cube url="panos/panos95/gaizao.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-90.492" atv="39.262" rotate='-180' linkedscene="_95_etf" />
+		<hotspot name="spot2" style="skin_hotspot_text_style"  ox="0" oy="-70" ath="-90.492" atv="39.262" linkedscene="_95_etf" />
 	</scene>
 <scene name="_95_etf" title="儿童房" onstart="" thumburl="panos/panos95/ertongfang.tiles/thumb.jpg" lat="" lng="" heading="">
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -89,6 +94,8 @@
 		<image>
 			<cube url="panos/panos95/ertongfang.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-93.072" atv="51.070"  rotate='-180' linkedscene="_95_cf" />
+		<hotspot name="spot2" style="skin_hotspot_text_style"  ox="0" oy="-70"  ath="-93.072" atv="51.070" linkedscene="_95_cf" />
 	</scene>
 	<scene name="_95_cf" title="厨房" onstart="" thumburl="panos/panos95/cf.tiles/thumb.jpg" lat="" lng="" heading="">
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -96,6 +103,8 @@
 		<image>
 			<cube url="panos/panos95/cf.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="149.661" atv="54.469" rotate='-180' linkedscene="_95_wsj" />
+	  <hotspot name="spot2" style="skin_hotspot_text_style"  ox="0" oy="-70"  ath="149.661" atv="54.469" linkedscene="_95_wsj" />
 	</scene>
 	<scene name="_95_wsj" title="卫生间" onstart="" thumburl="panos/panos95/weishengjian.tiles/thumb.jpg" lat="" lng="" heading="">
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -103,6 +112,8 @@
 		<image>
 			<cube url="panos/panos95/weishengjian.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-19.842" atv="71.682" rotate='-180' linkedscene="_95_kt" />
+		<hotspot name="spot2" style="skin_hotspot_text_style"  ox="0" oy="-70" ath="-19.842" atv="71.682" linkedscene="_95_kt" />
 	</scene>
 
 
@@ -112,6 +123,8 @@
 		<image>
 			<cube url="panos/panos120/keting.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="123.444" atv="22.750" rotate='-90' linkedscene="_120_zw" />
+		<hotspot name="spot2" style="skin_hotspot_text_style"  ox="0" oy="-70" ath="123.444" atv="22.750" linkedscene="_120_zw" />
 	</scene>
 	<scene name="_120_zw" title="主卧" onstart="" thumburl="panos/panos120/zhuwo.tiles/thumb.jpg" lat="" lng="" heading="">
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -119,6 +132,8 @@
 		<image>
 			<cube url="panos/panos120/zhuwo.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="112.932" atv="38.007" rotate='-90' linkedscene="_120_cw" />
+		<hotspot name="spot2" style="skin_hotspot_text_style"  ox="0" oy="-70" ath="112.932" atv="38.007" linkedscene="_120_cw" />
 	</scene>
 	<scene name="_120_cw" title="次卧" onstart="" thumburl="panos/panos120/ciwo.tiles/thumb.jpg" lat="" lng="" heading="">
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -126,6 +141,8 @@
 		<image>
 			<cube url="panos/panos120/ciwo.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="76.973" atv="37.118" rotate='-180' linkedscene="_120_kw" />
+		<hotspot name="spot2" style="skin_hotspot_text_style"  ox="0" oy="-70" ath="76.973" atv="37.118" linkedscene="_120_kw" />
 	</scene>
 	<scene name="_120_kw" title="客卧" onstart="" thumburl="panos/panos120/kewo.tiles/thumb.jpg" lat="" lng="" heading="">
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -133,6 +150,8 @@
 		<image>
 			<cube url="panos/panos120/kewo.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-87.860" atv="43.245" rotate='-180' linkedscene="_120_tk" />
+		<hotspot name="spot2" style="skin_hotspot_text_style"  ox="0" oy="-70" ath="-87.860" atv="43.245" linkedscene="_120_tk" />
 	</scene>
 	<scene name="_120_tk" title="挑空" onstart="" thumburl="panos/panos120/tiaokong.tiles/thumb.jpg" lat="" lng="" heading="">
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -140,6 +159,8 @@
 		<image>
 			<cube url="panos/panos120/tiaokong.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="147.459" atv="47.840" rotate='-150' linkedscene="_120_ymj" />
+		<hotspot name="spot2" style="skin_hotspot_text_style"  ox="0" oy="-70" ath="147.459" atv="47.840" linkedscene="_120_ymj" />
 	</scene>
 		<scene name="_120_ymj" title="衣帽间" onstart="" thumburl="panos/panos120/yimaojian.tiles/thumb.jpg" lat="" lng="" heading="">
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -147,6 +168,8 @@
 		<image>
 			<cube url="panos/panos120/yimaojian.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="139.938" atv="34.688" rotate='-180' linkedscene="_120_cf" />
+		<hotspot name="spot2" style="skin_hotspot_text_style"  ox="0" oy="-70"  ath="139.938" atv="34.688" linkedscene="_120_cf" />
 	</scene>
 	<scene name="_120_cf" title="厨房" onstart="" thumburl="panos/panos120/cf.tiles/thumb.jpg" lat="" lng="" heading="">
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -154,6 +177,8 @@
 		<image>
 			<cube url="panos/panos120/cf.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="175.944" atv="56.870" rotate='90' linkedscene="_120_dxs" />
+		<hotspot name="spot2" style="skin_hotspot_text_style"  ox="0" oy="-70"  ath="175.944" atv="56.870" linkedscene="_120_dxs" />
 	</scene>
 	<scene name="_120_dxs" title="地下室" onstart="" thumburl="panos/panos120/dixiashi.tiles/thumb.jpg" lat="" lng="" heading="">
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -161,13 +186,17 @@
 		<image>
 			<cube url="panos/panos120/dixiashi.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="96.793" atv="39.371" rotate='180' linkedscene="_120_dxsccj" />
+		<hotspot name="spot2" style="skin_hotspot_text_style"  ox="0" oy="-70"  ath="96.793" atv="39.371" linkedscene="_120_dxsccj" />
 	</scene>
-		<scene name="_120_dxsccj" title="地下室储藏间" onstart="" thumburl="panos/panos120/chucanjian.tiles/thumb.jpg" lat="" lng="" heading="">
+		<scene name="_120_dxsccj" title="地下室储藏间" onstart="" thumburl="panos/panos120/chucangjian.tiles/thumb.jpg" lat="" lng="" heading="">
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-		<preview url="panos/panos120/chucanjian.tiles/preview.jpg" />
+		<preview url="panos/panos120/chucangjian.tiles/preview.jpg" />
 		<image>
-			<cube url="panos/panos120/chucanjian.tiles/pano_%s.jpg" />
+			<cube url="panos/panos120/chucangjian.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-85.229" atv="36.830" rotate='-180' linkedscene="_120_wsj" />
+			<hotspot name="spot2" style="skin_hotspot_text_style"  ox="0" oy="-70"  ath="-85.229" atv="36.830" linkedscene="_120_wsj" />
 	</scene>
 	<scene name="_120_wsj" title="卫生间" onstart="" thumburl="panos/panos120/weishengjian.tiles/thumb.jpg" lat="" lng="" heading="">
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -175,6 +204,8 @@
 		<image>
 			<cube url="panos/panos120/weishengjian.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-25.168" atv="73.211" rotate='-180' linkedscene="_120_kt" />
+		<hotspot name="spot2" style="skin_hotspot_text_style"  ox="0" oy="-70"  ath="-25.168" atv="73.211" linkedscene="_120_kt" />
 	</scene>
 
 
@@ -184,6 +215,8 @@
 		<image>
 			<cube url="panos/panos125/keting.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-12.018" atv="28.637" rotate='-180' linkedscene="_125_zw" />
+		<hotspot name="spot2" style="skin_hotspot_text_style"  ox="0" oy="-70"  ath="-12.018" atv="28.637" linkedscene="_125_zw" />
 	</scene>
 		<scene name="_125_zw" title="主卧" onstart="" thumburl="panos/panos125/zhuwo.tiles/thumb.jpg" lat="" lng="" heading="">
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -191,6 +224,8 @@
 		<image>
 			<cube url="panos/panos125/zhuwo.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-136.185" atv="48.134" rotate='-180' linkedscene="_125_cw" />
+		<hotspot name="spot2" style="skin_hotspot_text_style"  ox="0" oy="-70"  ath="-136.185" atv="48.134" linkedscene="_125_cw" />
 	</scene>
 	<scene name="_125_cw" title="次卧" onstart="" thumburl="panos/panos125/ciwo.tiles/thumb.jpg" lat="" lng="" heading="">
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -198,6 +233,8 @@
 		<image>
 			<cube url="panos/panos125/ciwo.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="34.297" atv="58.469" linkedscene="_125_sf" />
+		<hotspot name="spot2" style="skin_hotspot_text_style"  ox="0" oy="-50"  ath="34.297" atv="58.469" linkedscene="_125_sf" />
 	</scene>
 	<scene name="_125_sf" title="书房" onstart="" thumburl="panos/panos125/shufang.tiles/thumb.jpg" lat="" lng="" heading="">
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -205,6 +242,8 @@
 		<image>
 			<cube url="panos/panos125/shufang.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-12.538" atv="54.150" linkedscene="_125_wsj" />
+		<hotspot name="spot2" style="skin_hotspot_text_style"  ox="0" oy="-70"  ath="-12.538" atv="54.150" linkedscene="_125_wsj" />
 	</scene>
 	<scene name="_125_wsj" title="卫生间" onstart="" thumburl="panos/panos125/weishengjian.tiles/thumb.jpg" lat="" lng="" heading="">
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -212,6 +251,8 @@
 		<image>
 			<cube url="panos/panos125/weishengjian.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="178.667" atv="67.691" rotate='-180' linkedscene="_125_kt" />
+		<hotspot name="spot2" style="skin_hotspot_text_style"  ox="0" oy="-70"  ath="178.667" atv="67.691" linkedscene="_125_kt" />
 	</scene>
 
 	<scene name="_150_kt" title="客厅" onstart="" thumburl="panos/panos150/keting.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -220,6 +261,8 @@
 		<image>
 			<cube url="panos/panos150/keting.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-178.311" atv="22.765"  rotate='-90' linkedscene="_150_zw" />
+		<hotspot name="spot2" style="skin_hotspot_text_style"  ox="0" oy="-70"  ath="-178.311" atv="22.765" linkedscene="_150_zw" />
 	</scene>
 	<scene name="_150_zw" title="主卧" onstart="" thumburl="panos/panos150/zhuwo.tiles/thumb.jpg" lat="" lng="" heading="">
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -227,6 +270,8 @@
 		<image>
 			<cube url="panos/panos150/zhuwo.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-42.687" atv="47.168" linkedscene="_150_kw" />
+		<hotspot name="spot2" style="skin_hotspot_text_style"  ox="0" oy="-70"  ath="-42.687" atv="47.168" linkedscene="_150_kw" />
 	</scene>
 	<scene name="_150_kw" title="客卧" onstart="" thumburl="panos/panos150/kewo.tiles/thumb.jpg" lat="" lng="" heading="">
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -234,6 +279,8 @@
 		<image>
 			<cube url="panos/panos150/kewo.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-82.605" atv="47.886" rotate='-180' linkedscene="_150_etf" />
+		<hotspot name="spot2" style="skin_hotspot_text_style"  ox="0" oy="-70"  ath="-82.605" atv="47.886" linkedscene="_150_etf" />
 	</scene>
 	<scene name="_150_etf" title="儿童房" onstart="" thumburl="panos/panos150/ertongfang.tiles/thumb.jpg" lat="" lng="" heading="">
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -241,6 +288,8 @@
 		<image>
 			<cube url="panos/panos150/ertongfang.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="52.250" atv="57.372" linkedscene="_150_cf" />
+		<hotspot name="spot2" style="skin_hotspot_text_style"  ox="0" oy="-70"  ath="52.250" atv="57.372" linkedscene="_150_cf" />
 	</scene>
 	<scene name="_150_cf" title="厨房" onstart="" thumburl="panos/panos150/chufang.tiles/thumb.jpg" lat="" lng="" heading="">
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -248,6 +297,8 @@
 		<image>
 			<cube url="panos/panos150/chufang.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-1.003" atv="51.699" linkedscene="_150_dxs" />
+		<hotspot name="spot2" style="skin_hotspot_text_style"  ox="0" oy="-70" ath="-1.003" atv="51.699" linkedscene="_150_dxs" />
 	</scene>
 	<scene name="_150_dxs" title="地下室" onstart="" thumburl="panos/panos150/dixiashi.tiles/thumb.jpg" lat="" lng="" heading="">
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -255,6 +306,8 @@
 		<image>
 			<cube url="panos/panos150/dixiashi.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="115.815" atv="36.691"  rotate='-180'  linkedscene="_150_wsj" />
+		<hotspot name="spot2" style="skin_hotspot_text_style"  ox="0" oy="-70" ath="115.815" atv="36.691" linkedscene="_150_wsj" />
 	</scene>
 	<scene name="_150_wsj" title="卫生间" onstart="" thumburl="panos/panos150/weishengjian.tiles/thumb.jpg" lat="" lng="" heading="">
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -262,5 +315,7 @@
 		<image>
 			<cube url="panos/panos150/weishengjian.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-6.468" atv="72.992" linkedscene="_150_kt" />
+		<hotspot name="spot2" style="skin_hotspot_text_style"  ox="0" oy="-70" ath="-6.468" atv="72.992" linkedscene="_150_kt" />
 	</scene>
 </krpano>
