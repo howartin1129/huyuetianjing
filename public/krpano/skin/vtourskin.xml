@@ -57,7 +57,7 @@
 				 css='font-size:24px;font-weight:bold;'
 				 padding='5 20'
 	       onclick="skin_hotspotstyle_click();"
-	       onloaded="copy(html,scene[get(linkedscene)].title);"
+	       onloaded="if(html === '' ,copy(html,scene[get(linkedscene)].title););"
 	       />
 	<action name="skin_hotspotstyle_click" scope="local">
 		if(caller.linkedscene,
