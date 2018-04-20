@@ -18,11 +18,12 @@
 }
 
 #krpano .huxingtu-container {
-	width: 30%;
+	width: 10%;
 	position: absolute;
 	bottom: -.7%;
 	right: 0;
 	z-index: 999;
+	transition: all .15s linear;
 }
 
 #krpano .huxingtu-container img {

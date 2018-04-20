@@ -13,7 +13,8 @@ export default class House extends Component {
 
 	state = {
 		house_type: 0,
-		sence_index: 0
+		sence_index: 0,
+		showbighxt: false
 	}
 
 	componentDidMount() {
@@ -45,7 +46,17 @@ export default class House extends Component {
 	render() {
 		return <div className='house-container'>
 			<div id='krpano'>
-				<div className='huxingtu-container'>
+				<div className='huxingtu-container'
+					style={{
+						width: this.state.showbighxt ? '80%' : '10%',
+						bottom: this.state.showbighxt ? '20%' : '-.7%'
+					}}
+					onClick={e => {
+						let show = this.state.showbighxt
+						this.setState({
+							showbighxt: !show
+						})
+					}}>
 					<img src={imgFactory[`hxt_${this.state.house_type}`]} alt="" />
 				</div>
 			</div>
@@ -56,6 +67,7 @@ export default class House extends Component {
 				this.krpano.call(`skin_loadscene(${conifg.houseType[e.house_type].imgarr[0]},get(skin_settings.loadscene_blend));`);
 				this.setState({
 					house_type: e.house_type,
+					showbighxt: false,
 					sence_index: 0
 				})
 			}} />
