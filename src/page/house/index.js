@@ -19,8 +19,8 @@ export default class House extends Component {
 
 	componentDidMount() {
 		window.embedpano({
-			xml: `./krpano/krpano.xml`,
-			// xml: `http://canto-dichan.stor.sinaapp.com/huyuetianjing/krpano.xml`,
+			// xml: `./krpano/krpano.xml`,
+			xml: `http://canto-dichan.stor.sinaapp.com/huyuetianjing/krpano/krpano.xml`,
 			target: `krpano`,
 			html5: "auto",
 			mobilescale: 1.0,
