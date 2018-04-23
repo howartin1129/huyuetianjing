@@ -1,81 +1,83 @@
-let btn_house = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house.png'
-let btn_garden = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/garden.png'
-let btn_enter = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/loadenter.png'
+let btn_house = require('../assets/house.png')
+let btn_garden = require('../assets/garden.png')
+let btn_enter = require('../assets/loadenter.png')
 
-let houseChoose_1 = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/ygxz.png'
-let houseChoose_2 = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/llds.png'
-let houseChoose_3 = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/kjmz.png'
-let houseChoose_4 = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/jxds.png'
-let arrow = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/arrow.png'
+let houseChoose_1 = require('../assets/house/ygxz.png')
+let houseChoose_2 = require('../assets/house/llds.png')
+let houseChoose_3 = require('../assets/house/kjmz.png')
+let houseChoose_4 = require('../assets/house/jxds.png')
+let arrow = require('../assets/house/arrow.png')
 
-let hxt_0 = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/95.png'
-let hxt_1 = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/120.jpg'
-let hxt_2 = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/125.jpg'
-let hxt_3 = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/150.jpg'
+let hxt_0 = require('../assets/house/95.jpg')
+let hxt_1 = require('../assets/house/120.jpg')
+let hxt_2 = require('../assets/house/125.jpg')
+let hxt_3 = require('../assets/house/150.jpg')
 
 //95
-let _95_cf_un = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/95/cf_un.png'
-let _95_cf = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/95/cf.png'
-let _95_cw_un = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/95/cw_un.png'
-let _95_cw = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/95/cw.png'
-let _95_etf_un = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/95/etf_un.png'
-let _95_etf = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/95/etf.png'
-let _95_kt_un = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/95/kt_un.png'
-let _95_kt = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/95/kt.png'
-let _95_wsj_un = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/95/wsj_un.png'
-let _95_wsj = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/95/wsj.png'
-let _95_zw_un = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/95/zw_un.png'
-let _95_zw = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/95/zw.png'
+let _95_cf_un = require('../assets/house/95/cf_un.png')
+let _95_cf = require('../assets/house/95/cf.png')
+let _95_cw_un = require('../assets/house/95/cw_un.png')
+let _95_cw = require('../assets/house/95/cw.png')
+let _95_etf_un = require('../assets/house/95/etf_un.png')
+let _95_etf = require('../assets/house/95/etf.png')
+let _95_kt_un = require('../assets/house/95/kt_un.png')
+let _95_kt = require('../assets/house/95/kt.png')
+let _95_wsj_un = require('../assets/house/95/wsj_un.png')
+let _95_wsj = require('../assets/house/95/wsj.png')
+let _95_zw_un = require('../assets/house/95/zw_un.png')
+let _95_zw = require('../assets/house/95/zw.png')
 
 //120
-let _120_cf_un = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/120/cf_un.png'
-let _120_cf = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/120/cf.png'
-let _120_cw_un = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/120/cw_un.png'
-let _120_cw = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/120/cw.png'
-let _120_dxs_un = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/120/dxs_un.png'
-let _120_dxs = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/120/dxs.png'
-let _120_dxsccj_un = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/120/dxsccj_un.png'
-let _120_dxsccj = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/120/dxsccj.png'
-let _120_kt_un = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/120/kt_un.png'
-let _120_kt = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/120/kt.png'
-let _120_kw_un = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/120/kw_un.png'
-let _120_kw = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/120/kw.png'
-let _120_tk_un = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/120/tk_un.png'
-let _120_tk = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/120/tk.png'
-let _120_wsj_un = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/120/wsj_un.png'
-let _120_wsj = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/120/wsj.png'
-let _120_zw_un = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/120/zw_un.png'
-let _120_zw = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/120/zw.png'
-let _120_ymj_un = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/120/ymj_un.png'
-let _120_ymj = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/120/ymj.png'
+let _120_cf_un = require('../assets/house/120/cf_un.png')
+let _120_cf = require('../assets/house/120/cf.png')
+let _120_cw_un = require('../assets/house/120/cw_un.png')
+let _120_cw = require('../assets/house/120/cw.png')
+let _120_dxs_un = require('../assets/house/120/dxs_un.png')
+let _120_dxs = require('../assets/house/120/dxs.png')
+let _120_dxsccj_un = require('../assets/house/120/dxsccj_un.png')
+let _120_dxsccj = require('../assets/house/120/dxsccj.png')
+let _120_kt_un = require('../assets/house/120/kt_un.png')
+let _120_kt = require('../assets/house/120/kt.png')
+let _120_kw_un = require('../assets/house/120/kw_un.png')
+let _120_kw = require('../assets/house/120/kw.png')
+let _120_tk_un = require('../assets/house/120/tk_un.png')
+let _120_tk = require('../assets/house/120/tk.png')
+let _120_wsj_un = require('../assets/house/120/wsj_un.png')
+let _120_wsj = require('../assets/house/120/wsj.png')
+let _120_zw_un = require('../assets/house/120/zw_un.png')
+let _120_zw = require('../assets/house/120/zw.png')
+let _120_ymj_un = require('../assets/house/120/ymj_un.png')
+let _120_ymj = require('../assets/house/120/ymj.png')
 
 //125
-let _125_cw_un = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/125/cw_un.png'
-let _125_cw = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/125/cw.png'
-let _125_kt_un = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/125/kt_un.png'
-let _125_kt = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/125/kt.png'
-let _125_sf_un = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/125/sf_un.png'
-let _125_sf = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/125/sf.png'
-let _125_wsj_un = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/125/wsj_un.png'
-let _125_wsj = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/125/wsj.png'
-let _125_zw_un = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/125/zw_un.png'
-let _125_zw = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/125/zw.png'
+let _125_cf_un = require('../assets/house/125/cf_un.png')
+let _125_cf = require('../assets/house/125/cf.png')
+let _125_cw_un = require('../assets/house/125/cw_un.png')
+let _125_cw = require('../assets/house/125/cw.png')
+let _125_kt_un = require('../assets/house/125/kt_un.png')
+let _125_kt = require('../assets/house/125/kt.png')
+let _125_sf_un = require('../assets/house/125/sf_un.png')
+let _125_sf = require('../assets/house/125/sf.png')
+let _125_wsj_un = require('../assets/house/125/wsj_un.png')
+let _125_wsj = require('../assets/house/125/wsj.png')
+let _125_zw_un = require('../assets/house/125/zw_un.png')
+let _125_zw = require('../assets/house/125/zw.png')
 
 //150
-let _150_cf_un = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/150/cf_un.png'
-let _150_cf = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/150/cf.png'
-let _150_dxs_un = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/150/dxs_un.png'
-let _150_dxs = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/150/dxs.png'
-let _150_etf_un = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/150/etf_un.png'
-let _150_etf = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/150/etf.png'
-let _150_kt_un = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/150/kt_un.png'
-let _150_kt = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/150/kt.png'
-let _150_kw_un = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/150/kw_un.png'
-let _150_kw = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/150/kw.png'
-let _150_wsj_un = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/150/wsj_un.png'
-let _150_wsj = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/150/wsj.png'
-let _150_zw_un = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/150/zw_un.png'
-let _150_zw = 'http://canto-dichan.stor.sinaapp.com/huyuetianjing/assets/house/150/zw.png'
+let _150_cf_un = require('../assets/house/150/cf_un.png')
+let _150_cf = require('../assets/house/150/cf.png')
+let _150_dxs_un = require('../assets/house/150/dxs_un.png')
+let _150_dxs = require('../assets/house/150/dxs.png')
+let _150_etf_un = require('../assets/house/150/etf_un.png')
+let _150_etf = require('../assets/house/150/etf.png')
+let _150_kt_un = require('../assets/house/150/kt_un.png')
+let _150_kt = require('../assets/house/150/kt.png')
+let _150_kw_un = require('../assets/house/150/kw_un.png')
+let _150_kw = require('../assets/house/150/kw.png')
+let _150_wsj_un = require('../assets/house/150/wsj_un.png')
+let _150_wsj = require('../assets/house/150/wsj.png')
+let _150_zw_un = require('../assets/house/150/zw_un.png')
+let _150_zw = require('../assets/house/150/zw.png')
 
 
 export default {
@@ -126,6 +128,8 @@ export default {
 	_120_ymj_un,
 	_120_ymj,
 
+	_125_cf_un,
+	_125_cf,
 	_125_cw_un,
 	_125_cw,
 	_125_kt_un,

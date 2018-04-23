@@ -19,8 +19,8 @@ export default class House extends Component {
 
 	componentDidMount() {
 		window.embedpano({
-			// xml: `./krpano/krpano.xml`,
-			xml: `http://canto-dichan.stor.sinaapp.com/huyuetianjing/krpano.xml`,
+			xml: `./krpano/krpano.xml`,
+			// xml: `http://canto-dichan.stor.sinaapp.com/huyuetianjing/krpano.xml`,
 			target: `krpano`,
 			html5: "auto",
 			mobilescale: 1.0,
@@ -48,8 +48,8 @@ export default class House extends Component {
 			<div id='krpano'>
 				<div className='huxingtu-container'
 					style={{
-						width: this.state.showbighxt ? '80%' : '10%',
-						bottom: this.state.showbighxt ? '20%' : '-.7%'
+						width: this.state.showbighxt ? '100%' : '15%',
+						bottom: this.state.showbighxt ? '13%' : '-.7%'
 					}}
 					onClick={e => {
 						let show = this.state.showbighxt

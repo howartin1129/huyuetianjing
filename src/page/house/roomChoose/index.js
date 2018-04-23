@@ -12,6 +12,9 @@ export default class RoomChoose extends Component {
 	}
 
 	componentDidUpdate() {
+		if (this.props.sence_index === 0) {
+			this.roomSwiper.slideTo(0, 1000, false)
+		}
 		this.roomSwiper.update()
 	}
 
